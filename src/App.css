@@ -369,9 +369,10 @@ h6 {
   width: 80vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
+  overflow: hidden;
 }
 .single-room-images img {
   width: 100%;
@@ -417,6 +418,11 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+}
+@media screen and (min-width: 480px) {
+  .single-room-images {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
 @media screen and (min-width: 992px) {
   .single-room-images,
